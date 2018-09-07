@@ -1,0 +1,91 @@
+/* Quiz styles */
+
+//Sass Variables
+$basefont: "Times New Roman", san-serif;
+$background: lightblue;
+$leftMargin: 60px;
+$padding: 20px;
+
+//Mixin
+@mixin border($radius: 20px) {
+    border: 2px solid #064277;
+    border-radius: 20px;
+    
+  }
+
+header {
+    @include border(20px);
+    margin: 10px auto;
+    padding: $padding;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+body {
+    width: 600px;
+    margin: auto;
+    font-family:$basefont;
+    font-size: 1em;
+    font-style:oblique;
+    background-color: $background;
+}
+
+
+h1 {
+    color:#58a0e0;
+}
+
+#content {
+    @include border(20px);
+    margin: 10px auto;
+    padding: $padding;
+    background-color: aliceblue;
+}
+
+#list{
+    @include border(20px);
+    background-color: aliceblue;
+}
+
+h2 {
+    color: #064277;
+}
+
+h3 {
+    margin-left: $leftMargin;
+    color:#58a0e0
+}
+
+ul{
+    margin-left: $leftMargin;
+}
+
+p{
+    font-family: $basefont;
+    font-style:normal;
+}
+
+.samplepara {
+    border: 3px solid #58a0e0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+footer {
+    @include border(20px);
+    margin: 10px auto;
+    padding: $padding;
+    background-color: aliceblue;
+}
+
+#footer {
+   font:
+    { font-size: .75em;
+    font-style:italic;
+    font-weight: bold;
+    color: #064277;
+    text-align: center;
+   }
+}
+
